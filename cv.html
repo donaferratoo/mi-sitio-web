@@ -1,0 +1,123 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CV</title>
+<meta name="viewport" content="witdh=device-witdh,initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+<link href="estilos.css" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="CV">
+    <header>
+      <a href="index.html"> <img class="logo" src="https://i.ibb.co/5gT0VHCf/borntobefed.png" alt="BORN TO BE FED"></a>
+      <a href="#" class="icono" onclick="MiFuncion()">
+      <i class="fa fa-bars"></i></a>
+       
+      <nav id="navegador" class=" ">
+             <ul>
+                 <li><a href="menu.html">Menú</a></li>
+                 <li><a href="eventos.html">Eventos</a></li>
+                 <li><a href="merchandising.html">Merchandising</a></li>
+                 <li><a href="nosotros.html">Nosotros</a></li>
+                 <li><a href="cv.html">Cargá tu CV</a></li>
+             </ul>
+         </nav>
+     </header>
+     <main>
+
+      <section class="cv" id="cv">
+        <h2>Trabajá con Nosotros</h2>
+        <p>¿Querés formar parte de Born to Be Fed? Mandanos tus datos y sumate a nuestro equipo de rock y sabor.</p>
+        
+        <a href="#formulario-cv" class="cv-button">Enviar CV</a>
+      </section>
+      
+      <section class="collage-cv">
+
+        <div class="collage-grid">
+          <img src="empleado-cv-1.png" alt="Empleado feliz">
+          <img src="empleada del año cv.png" alt="Equipo en acción">
+          <img src="animador del mes.png" alt="Noche especial">
+        </div>
+      </section>
+      
+
+
+      <section class="formulario-seccion" id="formulario-cv">
+        <h2>Dejanos tus datos</h2>
+      
+        <form class="formulario">
+          <div class="formulario-datos">
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Apellido" required>
+          </div>
+          
+          <div class="formulario-datos">
+            <input type="text" placeholder="Número de Teléfono" required>
+            <input type="text" placeholder="DNI" required>
+          </div>
+      
+          <textarea placeholder="Contanos más sobre vos..." rows="5" required></textarea>
+      
+          <button type="submit">Enviar Formulario</button>
+          <a href="#cv" class="cv-volver">Volver</a>
+        </form>
+      </section>
+      
+    
+
+     </main>
+
+     <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="index.html"><img src="https://i.ibb.co/5gT0VHCf/borntobefed.png" alt="Born to Be Fed">
+          </div>
+      
+          <div class="footer-links">
+            <h4>Mini Explorers</h4>
+            <ul>
+              <li><a href="menu.html">Menú-</a></li>
+              <li><a href="eventos.html">Eventos-</a></li>
+              <li><a href="merchandising.html">Merchandising-</a></li>
+              <li><a href="nosotros.html">Nosotros-</a></li>
+              <li><a href="cv.hmtl">CV</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p>📍 Honduras 5000, Palermo Soho, CABA</p>
+            <p>📞 (011) 1234-5678</p>
+            <p>📧 dona.ferrato@gmail.com</p>
+      
+            <div class="footer-social">
+              <a href="#"><img src="Instagram.png" alt="Instagram"></a>
+              <a href="#"><img src="Facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 Born to Be Fed. Todos los derechos reservados.</p>
+        </div>
+</footer>
+<script>
+  function MiFuncion() {
+  var x = document.getElementById("navegador");
+  if (x.className === " ") {
+  id="navegador"
+  x.className += "mostrar";
+  } else {
+  x.className = " ";
+  }
+  }
+</script>
+</body>
+</html>

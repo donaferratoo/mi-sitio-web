@@ -1,0 +1,149 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eventos</title>
+<meta name="viewport" content="witdh=device-witdh,initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+<link href="estilos.css" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="eventos1">
+    <header>
+        <a href="index.html"> <img class="logo" src="https://i.ibb.co/5gT0VHCf/borntobefed.png" alt="BORN TO BE FED"></a>
+        <a href="#" class="icono" onclick="MiFuncion()">
+        <i class="fa fa-bars"></i></a>
+        
+        <nav id="navegador" class=" ">
+                 <ul>
+                     <li><a href="menu.html">Menú</a></li>
+                     <li><a href="eventos.html">Eventos</a></li>
+                     <li><a href="merchandising.html">Merchandising</a></li>
+                     <li><a href="nosotros.html">Nosotros</a></li>
+                     <li><a href="cv.html">Cargá tu CV</a></li>
+                 </ul>
+             </nav>
+    </header>
+
+<main>
+    <section class="eventos-section" id="eventos">
+        <h2>Próximos Eventos</h2>
+      
+        <div class="eventos-grid">
+      
+          <div class="evento-card">
+            <h3>18 de Mayo</h3>
+            <p>Noche Tributo a Queen</p>
+            <a href="#evento1" class="evento-button">Ver más</a>
+          </div>
+      
+          <div class="evento-card">
+            <h3>25 de Mayo</h3>
+            <p>Karaoke Rock Festival Edicion: 90s</p>
+            <a href="#evento2" class="evento-button">Ver más</a>
+          </div>
+      
+          <div class="evento-card">
+            <h3>1 de Junio</h3>
+            <p>Banda Invitada: The Rollers</p>
+            <a href="#evento3" class="evento-button">Ver más</a>
+          </div>
+      
+          <div class="evento-card">
+            <h3>8 de Junio</h3>
+            <p>Fiesta Temática 60s/70s/80s</p>
+            <a href="#evento4" class="evento-button">Ver más</a>
+          </div>
+      
+        </div>
+      </section>
+
+      <section class="detalle-eventos">
+
+        <div id="evento1" class="detalle-evento">
+          <h2>Noche Tributo a Queen</h2>
+          <p><strong>Fecha:</strong> 18 de Mayo</p>
+          <p><strong>Banda:</strong> Crazy Little Things (Tributo Oficial)</p>
+          <p><strong>Temática de vestimenta:</strong> Disfrazate como Freddie Mercury o Brian May</p>
+          <p><strong>Actividades:</strong> Sorteos de merchandising exclusivo, karaoke de Queen</p>
+        </div>
+      
+        <div id="evento2" class="detalle-evento">
+          <h2>Karaoke Rock Festival Edicion: 90s</h2>
+          <p><strong>Fecha:</strong> 25 de Mayo</p>
+          <p><strong>Temática:</strong>90s</p>
+          <p><strong>Actividades:</strong> Premiamos la mejor performance con cenas gratis </p>
+        </div>
+      
+        <div id="evento3" class="detalle-evento">
+          <h2>Banda Invitada: The Rollers</h2>
+          <p><strong>Fecha:</strong> 1 de Junio</p>
+          <p><strong>Banda:</strong> The Rollers (Rock nacional e internacional)</p>
+          <p><strong>Temática:</strong> Rock & Friends Night</p>
+          <p><strong>Actividades:</strong> Happy Hour extendido </p>
+        </div>
+      
+        <div id="evento4" class="detalle-evento">
+          <h2>Fiesta Temática 60s/70s/80s</h2>
+          <p><strong>Fecha:</strong> 8 de Junio</p>
+          <p><strong>Temática:</strong> Años 60s,70s,80s</p>
+          <p><strong>Actividades:</strong> Concurso de mejor disfraz + DJ Set retro </p>
+        </div>
+      
+      </section>
+      
+    
+</main>
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <a href="index.html"><img src="https://i.ibb.co/5gT0VHCf/borntobefed.png" alt="Born to Be Fed">
+      </div>
+  
+      <div class="footer-links">
+        <h4>Mini Explorers</h4>
+        <ul>
+          <li><a href="menu.html">Menú-</a></li>
+          <li><a href="eventos.html">Eventos-</a></li>
+          <li><a href="merchandising.html">Merchandising-</a></li>
+          <li><a href="nosotros.html">Nosotros-</a></li>
+          <li><a href="cv.hmtl">CV</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>📍 Honduras 5000, Palermo Soho, CABA</p>
+        <p>📞 (011) 1234-5678</p>
+        <p>📧 dona.ferrato@gmail.com</p>
+  
+        <div class="footer-social">
+          <a href="#"><img src="Instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="Facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Born to Be Fed. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<script>
+    function MiFuncion() {
+    var x = document.getElementById("navegador");
+    if (x.className === " ") {
+    id="navegador"
+    x.className += "mostrar";
+    } else {
+    x.className = " ";
+    }
+    }
+</script>
+</body>
+
+</html>
