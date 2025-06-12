@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BORN TO BE FED ANUNCIO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .ad-container {
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffa909;
+            border: 2px solid #000000;
+            padding: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            width: 728px;
+            height: 120px;
+            text-align: left;
+            color: #000000;
+        }
+
+        .logo {
+            height: 90px;
+            margin-right: 20px;
+        }
+
+        .text-container {
+            flex-grow: 1;
+            display: flex;
+            flex-flow: wrap;
+        }
+
+        h2 {
+            font-size: 23px;
+            margin: 5px 0;
+            width: 80%;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 0px;
+            color: #000000;
+        }
+
+        .cta {
+            display: inline-block;
+    padding: 10px 20px;
+    background-color: #ba6900;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    height: 20px;
+    margin: 0 0 0px 50px;
+        }
+
+        
+element.style {
+    display: flex;
+    flex-flow: wrap;
+}
+
+        .cta:hover {
+            background-color: #7a4f00; 
+        }
+
+        @media (max-width: 600px) {
+            .ad-container {
+                width: 300px;
+                height: 600px;
+                flex-direction: column; 
+                align-items: center;
+                text-align: center;
+            }
+
+            .logo {
+                max-width: 85%;
+                margin-top: 88px;
+                margin-right: 0;
+            }
+
+            .text-container {
+               	text-align: center;
+        		display: flex;
+				flex-flow: wrap;
+				justify-content: center;
+				align-content: flex-start;
+                align-content: space-around;
+            }
+
+            .anuncio{
+                width: 300px;
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ad-container">
+        <img src="https://i.ibb.co/5gT0VHCf/borntobefed.png" alt="BORN TO BE FED" class="logo">
+        <div class="text-container">
+            <h2>BORN TO BE FED</h2>
+            <p>Comé con ritmo, viví la experiencia, sentí la música</p>
+            <a href="https://donaferratoo.github.io/mi-sitio-web/" target="_blank" class="cta">Visitanos</a>
+        </div>
+    </div>
+
+</body>
+</html>
