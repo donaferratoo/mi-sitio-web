@@ -1,0 +1,88 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Born to be fed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+<link href="estilos.css" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="body_presentacion">
+  <header class="header_presentacion">
+     <a href="presentacion.html"> <img class="logo-presentacion" src="https://i.ibb.co/5gT0VHCf/borntobefed.png" alt="BORN TO BE FED"></a>
+     <a href="#" class="icono" onclick="MiFuncion()">
+        <i class="fa fa-bars"></i></a>
+   <nav id="navegador" class="navegador_presentacion">
+      <ul>
+        <li><a href="desarollo.html">DESARROLLO</a></li>
+        <li><a href="resultado.html">RESULTADO</a></li>
+        <li><a href="presupuesto.html">PRESUPUESTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+ <h1 class="h1-desarrollo">Desarrollo</h1>
+
+<section class="publico-objetivo">
+  <h2>Nuestro Design Thinking</h2>
+  <ul>
+    <li>Información centralizada</li>
+    <li>Generar confianza</li>
+    <li>Reservar y consultar online</li>
+    <li>Sección de CV</li>
+  </ul>
+</section>
+
+<section class="galeria-interactiva">
+  <h2 class="titulo-galeria">Wireframes</h2>
+  
+   <div class="contenedor-fotos">
+    <div class="imagenes-wireframes">
+      <a href="#foto1" class="foto-zoom">
+        <img src="wireframe-pc.jpg" alt="Imagen 1" class="thumbnail">
+      </a>
+
+      <a href="#foto2" class="foto-zoom">
+        <img src="wireframe-celular.jpg" alt="Imagen 2" class="thumbnail-2">
+      </a>
+    </div>
+
+    <p class="descripcion-wireframes">
+      Se diseñaron Wireframes para definir el espacio de cada elemento del sitio, para definir qué contenidos tenían más importancia y para ir pensando en como iba a ser la experiencia del usuario
+    </p>
+  </div>
+</section>
+
+<div id="foto1" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <img src="wireframe-pc.jpg" alt="Imagen 1 grande">
+    <h2>Wireframe PC</h2>
+    <p>Este es el diseño original del primer wireframe para PC.</p>
+  </div>
+</div>
+
+<div id="foto2" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <img src="wireframe-celular.jpg" alt="Imagen 2 grande">
+    <h2>Wireframe celular</h2>
+    <p>Estos son los diseños originales del primer wireframe para celular.</p>
+  </div>
+</div>
+
+<script>
+  function MiFuncion() {
+    var x = document.getElementById("navegador");
+    x.classList.toggle("mostrar");
+  }
+</script>
+</body>
+
+</html>

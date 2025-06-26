@@ -1,0 +1,179 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Merchandising</title>
+<meta name="viewport" content="witdh=device-witdh,initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+<link href="estilos.css" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="merchandising">
+    <header>
+        <a href="index.html"> <img class="logo" src="https://i.ibb.co/5gT0VHCf/borntobefed.png" alt="BORN TO BE FED"></a>
+        <a href="#" class="icono" onclick="MiFuncion()">
+          <i class="fa fa-bars"></i></a>
+           
+          <nav id="navegador" class=" ">
+             <ul>
+                 <li><a href="menu.html">Menú</a></li>
+                 <li><a href="eventos.html">Eventos</a></li>
+                 <li><a href="merchandising.html">Merchandising</a></li>
+                 <li><a href="nosotros.html">Nosotros</a></li>
+                 <li><a href="cv.html">Cargá tu CV</a></li>
+             </ul>
+         </nav>
+     </header>
+
+     <main>
+      
+      <section class="merchandising-slider" id="merchandising">
+        <h2>Merch Oficial</h2>
+
+        <div class="slider-container">
+
+          <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+
+          <div class="slider-fotos">
+
+            <div class="slide">
+              <img src="remera-merch.png" alt="Remera Rock">
+              <div class="slide-info">
+                <h3>Remera Born Rock</h3>
+                <span>$8.500</span>
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="gorra-merch.png" alt="Gorra Rock">
+              <div class="slide-info">
+                <h3>Gorra Born</h3>
+                <span>$4.200</span>
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="poster.png" alt="poster Rock">
+              <div class="slide-info">
+                <h3>Poster Edición Especial</h3>
+                <span>$1.500</span>
+                <button>Comprar</button>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="funkos.png" alt="Funkos Rock">
+              <div class="slide-info">
+                <h3>Funkos Rock: Axl Rose, Freddie Mercury, Charly Garcia</h3>
+                <span>$8.900</span>
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="vasorock-merch.png" alt="Vaso Rock">
+              <div class="slide-info">
+                <h3>Vaso Edición Especial</h3>
+                <span>$4.500</span>
+                <button>Comprar</button>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="vinilo.png" alt="Vinilo Sorpresa">
+              <div class="slide-info">
+                <h3>¡Vinilo sorpresa!</h3>
+                <span>$6.500</span>
+                <button>Comprar</button>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+
+        </div>
+
+        <script>
+          let currentSlide = 0;
+          const slides = document.querySelectorAll('.slide');
+          const totalSlides = slides.length;
+        
+          function updateSlidePosition() {
+            const track = document.querySelector('.slider-fotos');
+            track.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
+          }
+        
+          function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlidePosition();
+          }
+        
+          function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlidePosition();
+          }
+        </script>
+        
+
+
+     </main>
+
+
+
+
+
+
+     <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="index.html"><img src="https://i.ibb.co/5gT0VHCf/borntobefed.png" alt="Born to Be Fed">
+          </div>
+      
+          <div class="footer-links">
+            <h4>Mini Explorers</h4>
+            <ul>
+              <li><a href="menu.html">Menú-</a></li>
+              <li><a href="eventos.html">Eventos-</a></li>
+              <li><a href="merchandising.html">Merchandising-</a></li>
+              <li><a href="nosotros.html">Nosotros-</a></li>
+              <li><a href="cv.hmtl">CV</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p>📍 Honduras 5000, Palermo Soho, CABA</p>
+            <p>📞 (011) 1234-5678</p>
+            <p>📧 dona.ferrato@gmail.com</p>
+      
+            <div class="footer-social">
+              <a href="#"><img src="Instagram.png" alt="Instagram"></a>
+              <a href="#"><img src="Facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 Born to Be Fed. Todos los derechos reservados.</p>
+        </div>
+</footer>
+<script>
+  function MiFuncion() {
+  var x = document.getElementById("navegador");
+  if (x.className === " ") {
+  id="navegador"
+  x.className += "mostrar";
+  } else {
+  x.className = " ";
+  }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Born to be fed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+<link href="estilos.css" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="body_presentacion_presu">
+  <header class="header_presentacion">
+     <a href="presentacion.html"> <img class="logo-presentacion" src="https://i.ibb.co/5gT0VHCf/borntobefed.png" alt="BORN TO BE FED"></a>
+     <a href="#" class="icono" onclick="MiFuncion()">
+       <i class="fa fa-bars"></i></a>
+    <nav id="navegador" class="navegador_presentacion">
+      <ul>
+        <li><a href="desarollo.html">DESARROLLO</a></li>
+        <li><a href="resultado.html">RESULTADO</a></li>
+        <li><a href="presupuesto.html">PRESUPUESTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="presupuesto-slider" id="presupuesto">
+  <h2>Presupuesto del Proyecto</h2>
+
+  <div class="slider-container">
+    <button class="slider-btn prev" onclick="prevPresuSlide()">&#10094;</button>
+
+    <div class="slider-fotos" id="presu-slides">
+      <div class="slide">
+        <h3>Diseño de Información</h3>
+        <p>Investigación y planificación: USD 20 <br>
+          Mapeo del sitio y wireframes: USD 30 <br>
+          Redacción de contenido: USD 35
+        </p>
+        <strong>USD 85</strong>
+      </div>
+
+      <div class="slide">
+        <h3>Diseño Visual (UX/UI)</h3>
+        <p>Identidad visual (logo, colores, tipografía): USD 40 <br>
+          Prototipado inicial: USD 20 <br>
+          Diseño responsivo: USD 30
+        </p>
+        <strong>USD 90</strong>
+      </div>
+
+      <div class="slide">
+       <h3>Desarrollo Web (HTML, CSS y JS)</h3>
+        <p>Maquetación: USD 50 <br>
+          Interacciones (JavaScript básico): USD 30<br>
+          Optimización general (accesibilidad, SEO básico): USD 20
+        </p>
+        <strong>USD 100</strong>
+      </div>
+
+     <div class="slide">
+        <h3>Hosting y Dominio</h3>
+        <p>Dominio .com (anual): USD 12 <br>
+          Hosting mensual: USD 5
+        </p>
+        <strong>USD 17</strong>
+      </div>
+    </div>
+
+    <button class="slider-btn next" onclick="nextPresuSlide()">&#10095;</button>
+  </div>
+  </style>
+
+<script>
+  let currentPresuSlide = 0;
+  const presuSlides = document.querySelectorAll('#presu-slides .slide');
+  const totalPresuSlides = presuSlides.length;
+
+  function updatePresuSlidePosition() {
+    const track = document.getElementById('presu-slides');
+    track.style.transform = 'translateX(' + (-currentPresuSlide * 100) + '%)';
+  }
+
+  function nextPresuSlide() {
+    currentPresuSlide = (currentPresuSlide + 1) % totalPresuSlides;
+    updatePresuSlidePosition();
+  }
+
+  function prevPresuSlide() {
+    currentPresuSlide = (currentPresuSlide - 1 + totalPresuSlides) % totalPresuSlides;
+    updatePresuSlidePosition();
+  }
+</script>
+
+   <div class="revelador-precio">
+  <input type="checkbox" id="toggle-precio">
+  <label for="toggle-precio" class="boton-precio">Precio final</label>
+  <p class="texto-precio">USD 292</p>
+  </div>
+
+</section>
+
+<script>
+  function MiFuncion() {
+    var x = document.getElementById("navegador");
+    x.classList.toggle("mostrar");
+  }
+</script>
+
+</body>
+</html>

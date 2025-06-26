@@ -1,0 +1,117 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Born to be fed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+<link href="estilos.css" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="body_presentacion">
+  <header class="header_presentacion">
+      <a href="presentacion.html"> <img class="logo-presentacion" src="https://i.ibb.co/5gT0VHCf/borntobefed.png" alt="BORN TO BE FED"></a>
+       <a href="#" class="icono" onclick="MiFuncion()">
+       <i class="fa fa-bars"></i></a>
+    <nav id="navegador" class="navegador_presentacion">
+      <ul>
+        <li><a href="desarollo.html">DESARROLLO</a></li>
+        <li><a href="resultado.html">RESULTADO</a></li>
+        <li><a href="presupuesto.html">PRESUPUESTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+<section class="galeria-slider" id="galeria-rock">
+  <h2 class="h2-resu">Resultados</h2>
+
+  <div class="galeria-contenedor">
+    <button class="galeria-btn galeria-prev" onclick="fotoAnterior()">&#10094;</button>
+
+    <div class="galeria-track" id="galeria-slides">
+      <div class="galeria-slide">
+        <img src="inicio1.png" alt="Foto 1 del resultado">
+      </div>
+      <div class="galeria-slide">
+        <img src="menu1.png" alt="Foto 2 del resultado">
+      </div>
+      <div class="galeria-slide">
+        <img src="merch1.png" alt="Foto 3 del resultado">
+      </div>
+      <div class="galeria-slide">
+        <img src="nosotros1.png" alt="Foto 4 del resultado">
+      </div>
+      <div class="galeria-slide">
+        <img src="cv1.png" alt="Foto 5 del resultado">
+      </div>
+      <div class="galeria-slide">
+        <img src="form2.png" alt="Foto 6 del resultado">
+      </div>
+    </div>
+
+    <button class="galeria-btn galeria-next" onclick="fotoSiguiente()">&#10095;</button>
+  </div>
+</section>
+
+<section class="paleta-colores">
+  <h2>Paleta de Colores</h2>
+  <div class="colores">
+    <div class="color">
+      <div class="circulo" style="background-color: #deb887"></div>
+      <p>#deb887</p>
+    </div>
+    <div class="color">
+      <div class="circulo" style="background-color: #fc854e"></div>
+      <p>#fc854e</p>
+    </div>
+    <div class="color">
+      <div class="circulo" style="background-color: #CE3A24;"></div>
+      <p>#CE3A24</p>
+    </div>
+    <div class="color">
+      <div class="circulo" style="background-color: #1f1101;"></div>
+      <p>##1f1101</p>
+    </div>
+    <div class="color">
+      <div class="circulo" style="background-color: #ffffff;"></div>
+      <p>#ffffff</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  let indexFoto = 0;
+  const galeriaSlides = document.querySelectorAll('#galeria-slides .galeria-slide');
+  const totalGaleria = galeriaSlides.length;
+
+  function actualizarGaleria() {
+    const track = document.getElementById('galeria-slides');
+    track.style.transform = 'translateX(' + (-indexFoto * 100) + '%)';
+  }
+
+  function fotoSiguiente() {
+    indexFoto = (indexFoto + 1) % totalGaleria;
+    actualizarGaleria();
+  }
+
+  function fotoAnterior() {
+    indexFoto = (indexFoto - 1 + totalGaleria) % totalGaleria;
+    actualizarGaleria();
+  }
+</script>
+
+  </main>
+  <script>
+  function MiFuncion() {
+    var x = document.getElementById("navegador");
+    x.classList.toggle("mostrar");
+  }
+</script>
+
+</body>
+</html>
