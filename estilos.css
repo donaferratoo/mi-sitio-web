@@ -1590,3 +1590,24 @@ input[type="checkbox"] {
     font-size: 18px;
   }
  }
+ .contenedor-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; 
+}
+
+.boton-centrado {
+  padding: 15px 30px;
+  background-color: chocolate;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  transition: background 0.3s;
+}
+
+.boton-centrado:hover {
+  background-color: #b35a00;
+}
